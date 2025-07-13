@@ -1,0 +1,96 @@
+.contenedor-listamercado {
+  padding: 20px;
+  /* Espacio al borde de 20 */
+  border-radius: 4px;
+  background-color: #d6f8d2;
+  border: 1px solid #adadad;
+}
+
+.contenedor-listamercado h2 {
+  color: #333;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.listamercado {
+  list-style: none;
+  padding: 2px;/* Espacio al borde pequeño para no hacerlo muy voluminoso*/
+}
+
+.listamercado li {
+  background-color: #fff;
+  border: 1px solid #adadad;
+  border-radius: 5px;
+  margin-bottom: 5px; 
+  padding: 5px;
+}
+
+.listamercado li:last-child {
+  margin-bottom: 0;  /* Lo dejo pegado al final del contenedor */
+}
+
+.listamercado li strong { /*Pongo los strong de un color mas gris que el titulo*/
+  font-weight: bold;
+  color: #555;
+}
+
+.listamercado li span { /*^Pongo lo elementos que no son datos de un gris mas flojo*/
+  color: #777;
+}
+
+
+
+.listamercado li .contenedor-pregunta { /* Distribucion de los 3 primeros elementos*/
+  display: grid;
+  grid-template-columns: 5% 80% 15%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px;
+}
+
+.listamercado li .numero-apuesta{
+  /* font-size: 1.2rem; */
+  font-weight: bold;
+  font-style: italic;
+  /* justify-content: center;   */ /*No funciona aqui*/
+  text-align: center;
+  color: #ffffff;
+  border: 1px solid #adadad; 
+    border-radius: 4px;
+    background:  #808080;
+  margin-right: 10px; 
+  padding: 2px;
+}
+
+.listamercado li .pregunta{
+  color: #555;
+  justify-content: left;
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-size : 1.2rem;
+}
+
+
+/* Estilos para los valores de las opciones */
+.listamercado li .opciones {
+  display: flex;
+  gap: 10px; /*Deja hueco*/
+}
+
+.listamercado li .opcion-positiva {
+  text-align: right;
+}
+
+.listamercado li .opcion-positiva strong {/* Verde para los valores positivs */
+  color: #28a745;
+}
+
+.listamercado li .opcion-negativa {
+  text-align: right;
+}
+
+.listamercado li .opcion-negativa strong {/* Rojo para los valores negativos */
+  color: #e21010;
+}
+
+

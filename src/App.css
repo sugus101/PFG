@@ -1,0 +1,19 @@
+/* --------------------------------- */
+/* Hoja de estilos de la funcion App */
+/* --------------------------------- */
+
+.contenedor-usuario {
+    display: grid;
+    grid-template-columns: 3fr 1fr; /* Las menu de accion al 75% y de consulta al 25%*/
+    gap: 10px; /*Hueco entre componentes de 10px para que no se solapen*/
+    align-items: flex-start; /*Para que caiga arriba a la izqu*/
+  }
+
+.contenedor-admin {
+  display: grid;
+  gap: 10px;
+  align-items: flex-start;
+}
+  
+
+  

@@ -1,0 +1,42 @@
+.contenedor-menu {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #c1d7e2;
+  border-radius: 5px;
+  height: fit-content;
+  min-height: 400px;
+}
+
+.titulo-menu {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+
+.boton-resultado {
+  padding: 10px;
+  background-color: #4e4caf;
+  color: white;
+  border: 1px solid #d1d5db;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.boton-resultado:hover {
+  background-color: #120586;
+}
+
+.cuadro-resultado {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  width: 380px;
+  min-height: 240px;
+  word-wrap: break-word;
+  resize: vertical;
+}
