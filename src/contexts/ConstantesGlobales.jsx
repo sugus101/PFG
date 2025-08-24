@@ -1,3 +1,3 @@
 
 // Actualizar direccion del contrato cada vez que se despliega
-export const DIRECCION_CONTRATO = "0xfDa94862A4995d8bb02ee2fa1fB514fad829433E";
+export const DIRECCION_CONTRATO = "0xe54BAb04Cc41A19b7B7f70b94959d3DF026A1138";

@@ -7,7 +7,7 @@ import { useState, useEffect } from 'react';
 
 
 //Se crea el provider
-export function FetchMercados() {
+export function FetchMercados(_tipo) {
   const [mercados, setMercados] = useState([]);
   const [cargando, setCargando] = useState(true);
   const [error, setError] = useState(null);
@@ -17,7 +17,19 @@ export function FetchMercados() {
       try {
         setCargando(true);
         setError(null);
-        const respuesta = await fetch('/api/markets?active=true&archived=false&closed=false&limit=10&end_date_max=2025-12-31&start_date_min=2025-01-01');
+        const solicitud = '/api/markets?' +
+        'active=true' + 
+        '&archived=false' + 
+        '&closed=false' + 
+        '&limit=10'  +
+        '&end_date_max=2025-12-31' +
+        '&start_date_min=2025-01-01' + 
+        '&ascending=false' + 
+        '&order=' + _tipo;
+
+        console.log("Fetch: parametro de carga ", _tipo);
+
+        const respuesta = await fetch(solicitud);
         if (!respuesta.ok) {
           throw new Error(`HTTP error! status: ${respuesta.status}`);
         }

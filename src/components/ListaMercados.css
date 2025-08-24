@@ -2,8 +2,8 @@
   padding: 20px;
   /* Espacio al borde de 20 */
   border-radius: 4px;
-  background-color: #d6f8d2;
-  border: 1px solid #adadad;
+  background-color: #ffffff;
+  /* border: 1px solid #adadad; */
 }
 
 .contenedor-listamercado h2 {

@@ -1,18 +1,20 @@
-.marco-panel-principal { /* Marco del panel principal (el rojo) */
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
-    gap: 30px;
-    padding: 30px;
-    background-color: #d34646;
-    border-radius: 8px;
-  }
-  
-.marco-celda { /* Marco de cada celda */
+.marco-panel-principal {
+  /* Marco del panel principal (el rojo) */
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px;
+  background-color: #fcebeb;
+  border-radius: 8px;
+}
+
+.marco-celda {
+  /* Marco de cada celda */
   background-color: #fff;
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 6px;
-  display :block;
+  display: block;
 }
 
 .marco-celda h3 {
@@ -21,7 +23,8 @@
   color: #333;
 }
 
-.boton { /* Los botones del menu de admin */
+.boton {
+  /* Los botones del menu de admin */
   background-color: #007bff;
   color: white;
   border: rgb(56, 56, 56);
@@ -49,6 +52,8 @@
   color: #555;
   font-size: 0.9rem;
 }
+
+
 
 .grupo-inputs input,
 .grupo-inputs select,
@@ -90,4 +95,41 @@
   margin-bottom: 5px;
   color: #555;
   font-size: 0.9rem;
+}
+
+.barra-navegacion {/* EBarra de navegacion */
+  display: flex;
+  justify-content: space-around; /* Distribuyo los botones */
+  background-color: #333;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 0;
+}
+
+
+.barra-navegacion a {   /* Para apuntar a los hijos */
+  display: block;
+  flex-grow: 1; /*Llenan el esoacio*/
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;/*{para que tarde al pasar el bcursor por encima*/
+}
+
+.barra-navegacion a:hover {
+  background-color: #575757;
+}
+
+.barra-navegacion a.active { /*marco el que esta activo*/
+  background-color: #4CAF50;
+  color: white;
+}
+
+.marco-panel-principal h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2c3e50; 
+    text-align: center;
+    margin: 0; 
 }

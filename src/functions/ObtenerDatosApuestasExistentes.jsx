@@ -8,8 +8,13 @@ async function ObtenerDatosApuestaExistentes(contract) { //Nota Gus: una funcion
 
     // 2 Se conecta con la blockchain para obtener los mercados
     try {
-        //Recorre los 10 primeros mercados de la blockchain
-        for (let i = 1; i <= 10; i++) { //Nota gus: en solidity empieza a contar por el 1
+
+        // recupero el numero mas altos apra que no me de error cuando este a medias de lectura
+        const proximoBetId = await contract.proximoBetId();
+        const maxBetId = Math.min(proximoBetId.toNumber(),11); //limite de 10 o lo que haya
+
+        //Recorre los 10 primeros mercados de la blockchain o el maximo
+        for (let i = 1; i < maxBetId; i++) { //Nota gus: en solidity empieza a contar por el 1
 
             // A - Llama a la funcion del contrato
             const EventoDeApuesta = await contract.obtenerEstadoEventoDeApuesta(i);

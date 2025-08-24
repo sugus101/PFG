@@ -82,16 +82,17 @@ const CuadroAcciones = () => {
   return (
     <div className="contenedor-menu">
       <h2 className="titulo-menu">Consulta de Apuestas</h2>
+      <div className="layout-">
+        <button onClick={mostrarResultado} className="boton-resultado">
+          Mostrar Resultado
+        </button>
 
-      <button onClick={mostrarResultado} className="boton-resultado">
-        Mostrar Resultado
-      </button>
-
-      <textarea
-        value={resultado}
-        readOnly
-        className="cuadro-resultado"
-      />
+        <textarea
+          value={resultado}
+          readOnly
+          className="cuadro-resultado"
+        />
+      </div>
     </div>
   );
 };

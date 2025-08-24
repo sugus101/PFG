@@ -61,7 +61,7 @@ const CasillaApuesta = (props) => { //En este vengo con props
     console.log('Se ha apostado ', cantidad, 'ETH al si en el evento', props.apuestaData.id);
   };
 
-  // 1 Boton para apostar no
+  // 2 Boton para apostar no
   const BotonApostarNo = async () => {
     // 1.0 Declara e init
 

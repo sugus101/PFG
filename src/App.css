@@ -2,18 +2,102 @@
 /* Hoja de estilos de la funcion App */
 /* --------------------------------- */
 
-.contenedor-usuario {
-    display: grid;
-    grid-template-columns: 3fr 1fr; /* Las menu de accion al 75% y de consulta al 25%*/
-    gap: 10px; /*Hueco entre componentes de 10px para que no se solapen*/
-    align-items: flex-start; /*Para que caiga arriba a la izqu*/
-  }
 
-.contenedor-admin {
+.banner {
+  width: 80%;
+  max-width: 1200px;
+  aspect-ratio: 16/2;  
+
+  /* Estilo visual */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+}
+
+.contenedor-banner {
+  display: flex;
+  justify-content: center; /* Centra el contenido horizontalmente */
+
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
+  color: #333;
+}
+
+.app h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2c3e50;
+  text-align: center;
+  margin: 0;
+}
+
+.app h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contenedor-principal {
+  display: grid;
+  height: calc(100vh - 100px); /* Ajusta la altura para que no ocupe toda la pantalla */
+  width: 100%;
+  max-width: 1200px;
+  /* Esto para dejar hueco para que el menu lateral este fijo con el scroll */
+  margin-left: 100px; 
+}
+
+.barra-navegacion-main {
+  display: flex;
+  flex-direction: column; 
+  width: 200px; 
+  height: 100vh; 
+  background-color: #ebebeb; 
+  padding: 20px 10px; 
+  position: fixed; /* para que se mantenga fija al hacer scroll */
+  top: 0;
+  left: 0;
+  border-right: 1px solid #4e5459; 
+}
+
+.barra-navegacion-main .nav-link {
+  display: flex; 
+  align-items: center;
+  gap: 15px; 
+  padding: 15px 20px; 
+  margin-bottom: 10px;
+  color: #bdc3c7; 
+  text-decoration: none;
+  border-radius: 8px; 
+  transition: all 0.3s ease; 
+  font-size: 1rem;
+}
+
+.barra-navegacion-main .nav-link:hover {
+  background-color: #34495e; 
+  color: #ffffff; 
+  transform: translateX(5px); /* Pequeño movimiento a la derecha */
+}
+
+/* Para el enlace activo */
+.barra-navegacion-main .nav-link.active {
+  background-color: #3498db; 
+  color: #ffffff;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(52, 152, 219, 0.4); /* Sombra para resaltar */
+}
+
+.menu-central {
   display: grid;
   gap: 10px;
-  align-items: flex-start;
+  /*Hueco entre componentes de 10px para que no se solapen*/
+  background-color: rgb(255, 255, 255);
 }
-  
 
-  

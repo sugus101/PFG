@@ -1,11 +1,11 @@
 .contenedor-menu {
   width: 100%;
-  max-width: 400px;
   padding: 20px;
-  background-color: #c1d7e2;
+  background-color: #ffffff;
   border-radius: 5px;
   height: fit-content;
   min-height: 400px;
+
 }
 
 .titulo-menu {
@@ -13,7 +13,6 @@
   margin-bottom: 20px;
   color: #333;
 }
-
 
 .boton-resultado {
   padding: 10px;
@@ -35,7 +34,7 @@
   border: 1px solid #ddd;
   border-radius: 5px;
   background-color: #f9f9f9;
-  width: 380px;
+  width: 97%;
   min-height: 240px;
   word-wrap: break-word;
   resize: vertical;
